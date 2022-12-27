@@ -18,8 +18,8 @@
                 <li><a href="shop.html">Shop</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a class="active" href="contact.html">Contact</a></li>
-                <li id="lg-bag"><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="lg-bag"><a class="active" href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
                 <a href="#" id="close"><i class="far fa-times"></i></a>
             </ul>
         </div>
@@ -34,75 +34,74 @@
         <p>LEAVE A MASSAGE, We love to hear from you!</p>
     </section>
 
-    <section id="contact-details" class="section-p1">
-        <div class="details">
-            <span>GET IN TOUCH</span>
-            <h2>Visit one of our agency locations or contact us today</h2>
-            <h3>Head Office</h3>
-            <div>
-               <li>
-                <i class="fal fa-map"></i>
-                <p>56 GlassFord Sreet Glasgow G1 1UL New York</p>
-               </li> 
-               <li>
-                <i class="far fa-envelope"></i>
-                <p>contact@mail.ru</p>
-               </li>
-               <li>
-                <i class="fas fa-phone-alt"></i>
-                <p>+7(925) 000 00-00</p>
-               </li>
-               <li>
-                <i class="far fa-clock"></i>
-                <p>Nonday to Saturday: 9pm to 16pm</p>
-               </li>
-            </div>
-        </div>
-        
-        <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8956.947877238332!2d-4.257364498493977!3d55.85855489082802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x488846a1bd9f3a95%3A0x4d4f7d198d14fbbd!2sOrigaiss!5e0!3m2!1sru!2sru!4v1672083006481!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+    <section id="cart" class="section-p1">
+        <table width = "100%">
+            <thead>
+                <tr>
+                   <td>Remove</td> 
+                   <td>Image</td>
+                   <td>Product</td>
+                   <td>Price</td>
+                   <td>Quantity</td>
+                   <td>Subtotal</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href=""> <i class="far fa-times-circle"></i> </a></td>
+                    <td><img src="img/products/f1.jpg" alt=""></td>
+                    <td>Cartoon Astronaut T-Shitys</td>
+                    <td>$118.19</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$118.19</td>
+                </tr>
+                <tr>
+                    <td><a href=""> <i class="far fa-times-circle"></i> </a></td>
+                    <td><img src="img/products/f2.jpg" alt=""></td>
+                    <td>Cartoon Astronaut T-Shitys</td>
+                    <td>$118.19</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$118.19</td>
+                </tr>
+                <tr>
+                    <td><a href=""> <i class="far fa-times-circle"></i> </a></td>
+                    <td><img src="img/products/f3.jpg" alt=""></td>
+                    <td>Cartoon Astronaut T-Shitys</td>
+                    <td>$118.19</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$118.19</td>
+                </tr>
+            </tbody>
+        </table>
     </section>
 
-    <section id="form-details">
-        <form action="">
-            <span><Label>LEAVE A MASSAGE</Label></span>
-            <h2>We love to hear from you</h2>
-            <input type="text" placeholder="Your name">
-            <input type="text" placeholder="E-mail">
-            <input type="text" placeholder="Subject">
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Massage"></textarea>
-            <button class="normal">Submit</button>        
-        </form>
-
-        <div class="people">
+    <section id="cart-add"  class="section-p1">
+        <div id="cupon">
+            <h3>Apply Coupon</h3>
             <div>
-                <img src="img/people/1.png" alt="">
-                <p><span>John Doe</span> Senior Narketing Manager <br> phone: +7(925)000 00 00 <br>E-mail: example@mai.ru </p>
-            </div>
-            <div>
-                <img src="img/people/2.png" alt="">
-                <p><span>William Smith</span> Senior Narketing Manager <br> phone: +7(925)000 00 00 <br>E-mail: example@mai.ru </p>
-            </div>
-            <div>
-                <img src="img/people/3.png" alt="">
-                <p><span>Emma Stone</span> Senior Narketing Manager <br> phone: +7(925)000 00 00 <br>E-mail: example@mai.ru </p>
+                <input type="text" placeholder="Enter Your Coupon">
+                <button class="normal">Applay</button>
             </div>
         </div>
-    </section>
-
-        
-    <section id="newLetter" class="section-p1 section-m1">
-        <div class="newstext">
-            <h4>Sign Up For Newsletters</h4>
-            <p>Get E-mail uplates about our latest shop and <span>special offers.</span></p>
+        <div id="subtotal">
+            <h3>Cart Totals</h3>
+            <table>
+                <tr>
+                    <td>Cart Subtotal</td>
+                    <td>$ 335</td>  
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td>Free</td>
+                </tr>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td><strong>$ 335</strong></td>
+                </tr>
+            </table>
+            <button class="normal">Proceed to chtckout</button>
         </div>
-        <div class="form">
-            <input type="text" placeholder="Your email address">
-            <button class="normal">Sing Up</button>
-        </div>
-    </section>
-
+   </section>
 
     <footer class="section-p1">
         <div class="col">
